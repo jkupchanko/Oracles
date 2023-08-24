@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background: var(--background);
+  color: var(--font-color);
+  animation: gradientChange 10s infinite;
+}
+
+.theme-toggle-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+  background-color: #4fa9d1;
+}
+
+.App-header {
+  position: relative;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.fetch-button {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.fetch-button:hover {
+  background-color: #4fa9d1;
+}
+
+.switch-button {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: fixed;
+  top: 85px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00eeff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.switch-button:hover {
+  background-color: #4fa9d1;
+}
+
+@keyframes gradientChange {
+  0% {
+    background: linear-gradient(45deg, #f06, #9f6);
+  }
+  25% {
+    background: linear-gradient(45deg, #9f6, #f06);
+  }
+  50% {
+    background: linear-gradient(45deg, #f90, #f06);
+  }
+  75% {
+    background: linear-gradient(45deg, #f06, #f90);
+  }
+  100% {
+    background: linear-gradient(45deg, #f06, #9f6);
+  }
+}
+
+.data-card {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
