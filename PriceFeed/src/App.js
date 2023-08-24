@@ -24,7 +24,7 @@ function App() {
   const loadBlockchainData = async () => {
     setLoading(true);
     const RPC_URL =
-      "https://sepolia.infura.io/v3/dc398c0585b946909b2695f422c1bb9b";
+      "https://sepolia.infura.io/v3/ADD_YOUR_NODE";
     const web3 = new Web3(new Web3.providers.HttpProvider(RPC_URL));
     const networkId = await web3.eth.net.getId();
     const networkData = livePrice.networks[networkId];
