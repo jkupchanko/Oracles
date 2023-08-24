@@ -9,7 +9,7 @@ module.exports = {
       provider: () =>
         new HDWalletProvider({
           privateKeys: [
-            "175a1e91bd0ef547c5458f9b8cb443ecb13e154e338ae7aab29a6c5f24215481",
+            "ADD_PRIVATE_KEY",
           ],
           providerOrUrl: `https://sepolia.infura.io/v3/${infuraKey}`,
           chainId: 11155111,
